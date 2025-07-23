@@ -63,7 +63,7 @@ function crearBanner() {
 
   closeSession.addEventListener("click", () => {
     localStorage.removeItem("current-user");
-    goTo("/home");
+    goTo("/");
   });
 }
 

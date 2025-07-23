@@ -3,7 +3,7 @@ import { renderNavbar } from "./views/home.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
-  const usuario = JSON.parse(localStorage.getItem("usuario"));
+  const usuario = JSON.parse(localStorage.getItem("current-user"));
 
   renderNavbar();
 

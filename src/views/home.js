@@ -134,6 +134,13 @@ export function renderNavbar() {
 export default {
   async init() {
     const app = document.getElementById("app");
+    if (!app) {
+      window.addEventListener("DOMContentLoaded", () => {
+        this.init();
+      });
+      return;
+    }
+
     app.innerHTML = "";
 
     console.log("Home view initialized");
